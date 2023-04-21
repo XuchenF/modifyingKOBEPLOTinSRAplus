@@ -1,5 +1,5 @@
 #Firstly, all codes are the same with DanOvando' s original codes in DanOvanDo/sraplus.
-#for unifying the figture presentation of Kobe Plot across sraplus and other Bayesian Surplus Production Tookits like CMSY, AMSY and so on.
+#for unifying the figture presentation of Kobe Plot across sraplus and other data-limited assessment Tookits like CMSY, AMSY and so on.
 #We just made a slight modification of the plot section.
 
 plot_kobe <- function(..., fontsize = 14,
