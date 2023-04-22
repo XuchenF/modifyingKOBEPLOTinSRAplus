@@ -2,12 +2,12 @@
 ##################################################################
 #Fox
 cpue<-anc[,4]
-length(cpue)
+N<-length(cpue)
 #please notice this, this number we need to use several times below
-Y<-cpue[2:33]/cpue[1:32]-1
-X1<-log(cpue[1:32])
+Y<-cpue[2:N]/cpue[1:N-1]-1
+X1<-log(cpue[1:N-1])
 effort<-anc[,2]/cpue
-X2<-effort[-33]
+X2<-effort[-N]
 PMLM<-lm(Y~X1+X2)
 r<--coef(PMLM)[2]
 q<--coef(PMLM)[3]
