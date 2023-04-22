@@ -42,6 +42,6 @@ B[1]<-cpue[1]/q
 for(i in 2:length(catch)){
 B[i]=BiomassF(r, k, catch[i-1], B[i-1])  
 }
-plot(anc[,1], anc[,4], ylim=c(0,1.3), xlab="year", ylab="CPUE")
+plot(anc[,1], anc[,4], ylim=c(-0.5,1.3), xlab="year", ylab="CPUE")
 points(anc[,1], q*B, pch=24)
 legend("top", legend=c("prediction", "observation"), bty="n", pch=c(24, 1), horiz=T)
