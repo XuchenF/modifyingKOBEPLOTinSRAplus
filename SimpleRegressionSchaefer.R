@@ -3,6 +3,7 @@
 #Schaefer form
 cpue<-anc[,4]
 length(cpue)
+#please notice this, this number we need to use several times below
 Y<-cpue[2:33]/cpue[1:32]-1
 X1<-cpue[1:32]
 effort<-anc[,2]/cpue
