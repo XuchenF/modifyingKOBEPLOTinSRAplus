@@ -1,4 +1,6 @@
 #After reading data
+##################################################################
+#Schaefer form
 cpue<-anc[,4]
 length(cpue)
 Y<-cpue[2:33]/cpue[1:32]-1
@@ -7,7 +9,7 @@ effort<-anc[,2]/cpue
 X2<-effort[-33]
 PMLM<-lm(Y~X1+X2)
 r<- coef(PMLM)[1]
-q<-coef(PMLM)[3]
+q<--coef(PMLM)[3]
 k<--r/coef(PMLM)[2]/q
 
 #visual presentation
