@@ -115,7 +115,7 @@ plot_ocom <- function(output){
 #Kobe plot similar to the cmsy
 plot(1000,1000,type="b", xlim=c(0,2), ylim=c(0,2),lty=3,xlab="",ylab=expression(F/F[MSY]), bty="l",  cex.main = 2, cex.lab = 1.35, cex.axis = 1.35,xaxs = "i",yaxs="i")
 mtext(expression(B/B[MSY]),side=1, line=3, cex=0.9)
-c1 <- c(-1,100)
+c1 <- c(0,2)
 c2 <- c(1,1)
 zb2 = c(0,1)
 zf2  = c(1,2)
